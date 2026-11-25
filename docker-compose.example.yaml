@@ -1,0 +1,7 @@
+services:
+  floppy-watch-together:
+    image: ghcr.io/davidgibbons/floppy-watch-together:main
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      INTERVAL_SECONDS: "3600"
